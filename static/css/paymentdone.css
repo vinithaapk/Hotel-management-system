@@ -1,0 +1,24 @@
+.box
+{
+  width: 320px;
+  padding: 10px;
+  border: 5px solid gray;
+    margin-top: 170px
+}
+ 
+.homebutton{
+	padding: 12px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 10%;
+    background: #f1f1f1;
+    margin-left: 580px;
+    margin-top: 10px; 
+    color: white;
+    text-decoration: none;
+    cursor: pointer;  
+  }
+  .homebutton:hover {
+  color: green;
+}

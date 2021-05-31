@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>Royal Villas</title>
+	<link rel="icon" href="C:\Users\Vinitha\Desktop\HTML\icon.png">
+	<link rel="stylesheet" href="homepage.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+			<div class="logo-image"><a href = "#" ><img src="C:\Users\Vinitha\Desktop\HTML\villas.png" width="162" height="48"></a></div>
+			<nav class="navbar"><ul>
+				  <li><a href="home">Home</a></li>
+				  <li><a href="#restaurant">Restaurant</a></li>
+				  <li><a href="#reservation">Reservation</a></li>
+				  <li><a href="#gallery">Gallery</a></li>
+				  <li><a href="#destination">Destination</a></li>
+				  <li><a href="#contact">Contact</a></li>
+			</ul></nav>	
+
+			<div class="slider-frame"></div><br>
+
+			 <div class="container">
+			    <select id="places">
+				    <option>Royal Villas, Chennai</option>
+				    <option>Royal Villas, Bangalore</option>
+				    <option>Royal Villas, Mumbai</option>
+				    <option>Royal Villas, Delhi</option>
+				    <option>Royal Villas, Kolkata</option>
+			    </select>
+			    <input  type="text" size="30" placeholder="Check In and Check Out" >
+			    <input  type="text" size="20" placeholder="Rooms and Guests">
+			 	<button onclick = "">Check Avaliability</button>
+		    </div>
+				
+			<div class="description" id="description">
+		    <p>The Royal Villas is a luxurious experience evoking the rich heritage of the palaces of City in grandness and space. The interiors are exquisite with beautiful, lush environment and landscapes are designed by a world renowned landscape designer. Large open vistas rival with exquisitely decorated walls like the peacock feather wall and the lapis lazuli studded tree of life wall in the inner courtyard which has water cascading down the wall creating a soothing and welcome sound. Large spacious rooms feature chic and modern guest room amenities. A stay at the award winning Royal Villas promises a rich, royal and luxurious experience.</p></div>
+
+			<div class="image1"></div>
+			<div class="right" id="right">
+				<p><u>Rooms and Suites:</u> starting from 538 sq ft / 50 sq mt
+					<ol>286 Deluxe/ Premiere Rooms</ol>
+					<ol>30 Suites: includes dedicated Butler and other exclusive amenities</ol>
+					<u>Banquet Venues:</u> spread over 28000 sq ft/2601 sq mt<br>
+					<u>Dining: Spectra</u>(all day dining); Jamavar (signature Indian restaurant); China XO (Chinese restaurant);<br>
+					The Library Bar; The Cake shop and The Lobby Lounge<br>
+					<u>Spa:</u> ESPA, with varied spa options and a Salon<br>
+					<u>Internet Access:</u> Complimentary for Resident Guest</p>
+			</div>
+
+			<div class="image2"></div>
+
+			<div class="left">
+				<h3><u>Customer Reviews</u></h3>
+				<p>Visited as a guest in the Royal Villas for lunch just today. We were entertaining friends from California, and enjoyed our ocean side table. We chose to stay indoors - to enjoy the air conditioning. I just want to say that, in addition to a nice meal, we had a delightful waitress, Jackie. She had just the right balance of friendliness and efficiency. She recognized that we wanted time to visit and did not rush us. She and other staff members made certain that we had everything we needed. Kudos!</p>
+			</div>
+</body>
+<footer>
+	<div class="foot" id="foot">
+		<h3><pre class="tab">©2020 Royal Villas. All Rights Reserved					            Privacy Policy | Legal | General Terms and Conditions</pre></h3><br>
+		<h3> Connect With Us: <a href="#" class="fa fa-facebook"></a>
+	<a href="#" class="fa fa-twitter"></a>
+	<a href="#" class="fa fa-google"></a>
+	<a href="#" class="fa fa-linkedin"></a>
+	<a href="#" class="fa fa-instagram"></a> </h3>
+</footer>
+</html>

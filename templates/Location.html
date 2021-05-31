@@ -1,0 +1,123 @@
+{% load static %}
+<html>
+<head>
+	<title>Hotel Royal Villas</title>
+	<meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="{% static 'icon/favicon.png' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/homepage.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/location.css' %}">	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+		<header>
+		<div class="Header">
+			<div class="logo-image"><a href = "#" ><img src="{% static 'icon\villas.png' %}" width="170" height="48" align="center"></a></div></div><br>
+		</header>
+</head>
+<body>
+			<nav class="navbar"><ul>
+					<li><a href="{% url 'index' %}">HOME</a></li>
+					<li><a href="{% url 'restaurant' %}">RESTAURANT</a></li>
+					<li><a href="{% url 'booking' %}">BOOKING</a></li>
+					<li><a href="{% url 'rooms' %}">ROOMS</a></li>
+					<li><a href="{% url 'location' %}">LOCATION</a></li>
+					<li><a href="{% url 'about' %}">ABOUT</a></li>
+					<li><a href="{% url 'contact' %}">CONTACT US</a></li>
+
+</ul></nav>	</div><br>
+<div class="toptexts2" id="toptexts2">
+	<h1> Locations </h1>
+    <div class="loc-img">
+	    <div class="border">
+			<img src="{% static 'images\loc1.jpg' %}"> 
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.263552235565!2d80.16185641389781!3d13.082476290783175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5263e8c12783bb%3A0x98206e03883329b7!2sRoyal%20Villas!5e0!3m2!1sen!2sin!4v1613974540501!5m2!1sen!2sin" allowfullscreen="" target="_blank" loading="eager"></iframe>
+			<address>
+				&#9813; HOTEL ROYAL VILLAS, CHENNAI<br> 
+				Adyar Sea Face,<br> M.R.C Nagar,<br> Chennai - 600 028<br>Tamil Nadu<br>
+				&#9742; +91 (44) 6665 1234<br>
+				&#128439;. +91 (44) 3366 1212<br>
+				<a href="{% url 'booking' %}">reservations@royalvillas.com</a> 
+			</address>
+		</div>
+		<div class="border">
+			<img src="{% static 'images\loc4.jpg' %}"> 
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.220651814539!2d77.63744861389692!3d13.021616090823064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1725c9dc0185%3A0xfc72ef1399c58c96!2sRoyal%20Villa%2C%20Kammanhalli%2C%2017%2C%205th%20Main%20Rd%2C%20HRBR%20Layout%202nd%20Block%2C%20HRBR%20Layout%2C%20Kalyan%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560043!5e0!3m2!1sen!2sin!4v1613975770525!5m2!1sen!2sin" allowfullscreen="" target="_blank" loading="eager"></iframe>
+			<address>
+				&#9813; HOTEL ROYAL VILLAS, BANGALORE<br> 
+				Kammanhalli,<br> 17, 5th Main Rd Kalyan Nagar,<br> Bengaluru - 560 043<br>Karnataka<br>
+				&#9742; +91 (44) 6665 1234<br>
+				&#128439;. +91 (44) 3366 1212<br>
+				<a href="{% url 'booking' %}">reservations@royalvillas.com</a> 
+			</address>
+		</div>
+		<div class="border">
+			<img src="{% static 'images\loc3.jpg' %}">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2617.5486269077596!2d78.37344828650534!3d17.255472729600495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbbea2dffdcd39%3A0x65a3884d05b4969b!2sRoyal%20Villas!5e0!3m2!1sen!2sin!4v1613975837879!5m2!1sen!2sin" allowfullscreen="" target="_blank" loading="eager"></iframe>
+			<address>
+				&#9813; HOTEL ROYAL VILLAS, HYDERABAD<br> 
+				Sai Prema Road,<br> Devatabowli,<br>Hyderabad - 600 028<br>Telangana<br>
+				&#9742; +91 (44) 6665 1234<br>
+				&#128439;. +91 (44) 3366 1212<br>
+				<a href="{% url 'booking' %}">reservations@royalvillas.com</a> 
+			</address>
+		</div>
+		<div class="border">
+			<img src="{% static 'images\loc2.jpg' %}">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9017.216445961856!2d88.39668910486495!3d22.603679010715442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027606e8416ca7%3A0xcb4fb138e37ccb84!2sRoyal%20Villa!5e0!3m2!1sen!2sin!4v1613976512462!5m2!1sen!2sin" allowfullscreen="" target="_blank" loading="eager"></iframe>
+			<div><address>
+				&#9813; HOTEL ROYAL VILLAS, KOLKATA<br> 
+				Lake Town Rd, Block 1,<br> Pallisree, Lake Town,<br>Kolkata - 700 048<br>West Bengal<br>
+				&#9742; +91 (44) 6665 1234<br>
+				&#128439;. +91 (44) 3366 1212<br>
+				<a href="{% url 'booking' %}">reservations@royalvillas.com</a> 
+			</address></div>
+		</div>
+		<div class="border">
+			<img src="{% static 'images\loc5.jpg' %}">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.923770726223!2d77.07393321424786!3d28.602063582429782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1b36c42d34d7%3A0xd5a508bfc5f3658f!2sRoyal%20St%2C%20Mahavir%20Enclave%20I%2C%20Mahavir%20Enclave%20Part%201%2C%20Mahavir%20Enclave%2C%20New%20Delhi%2C%20Delhi%20110045!5e0!3m2!1sen!2sin!4v1613976287239!5m2!1sen!2sin" allowfullscreen="" target="_blank" loading="eager"></iframe>
+			<div><address>
+				&#9813; HOTEL ROYAL VILLAS, DELHI<br> 
+				Royal Street,<br> Mahavir Enclave,<br>Delhi - 110 045<br>New Delhi<br>
+				&#9742; +91 (44) 6665 1234<br>
+				&#128439;. +91 (44) 3366 1212<br>
+				<a href="{% url 'booking' %}">reservations@royalvillas.com</a>
+			</address></div>
+		</div>
+		</div>
+	</div>
+
+
+
+</div>
+			
+</body>
+<footer class="footer">
+	<div class="inner-footer">
+		<div class="social-links">
+			<ul>
+		<li class="social-items"><a href="#" ><i class="fa fa-facebook"></i></a></li>
+		<li class="social-items"><a href="#" ><i class="fa fa-twitter-square"></i></a></li>
+		<li class="social-items"><a href="#" ><i class="fa fa-instagram"></i></a></li>
+		<li class="social-items"><a href="#" ><i class="fa fa-tumblr"></i></a></li>
+			</ul>
+		</div>
+		<div class="quick-links">
+			<ul>
+
+				<li class="quick-items"><a href="#">Home</a></li>
+				<li class="quick-items"><a href="#">Contact</a></li>
+				<li class="quick-items"><a href="#">Services</a></li>
+				<li class="quick-items"><a href="#">Policy</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="outer-footer">
+		Hotel Royal Villas & Restaurant &copy; 2021. Privacy Policy
+	</div>
+</footer>
+</html>

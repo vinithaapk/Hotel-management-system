@@ -1,0 +1,71 @@
+<html>
+<head>
+	<title>Hotel Royal Villas</title>
+	<link rel="icon" href="C:\Users\Vinitha\Desktop\HTML\icon.png">
+	<link rel="stylesheet" href="css\homepage.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<header>
+		<div class="Header">
+			<div class="logo-image"><a href = "#" ><img src="C:\Users\Vinitha\Desktop\HTML\villas.png" width="162" height="48"></a></div>
+			<nav class="navbar"><ul>
+				  <li><a href="Homepage.html">Home</a></li>
+				  <li><a href="Restaurant.html">Restaurant</a></li>
+				  <li><a href="Booking.html">Booking</a></li>
+				  <li><a href="Gallery.html">Gallery</a></li>
+				  <li><a href="Destination.html">Destination</a></li>
+				  <li><a href="Contact.html">Contact</a></li>
+			</ul></nav>	</div>
+		</header>
+</head>
+<body>
+			<br> 
+			<div class="container">
+			    <select name="places" class = "places">
+			    	<option>Select Place</option>
+				    <option>Royal Villas, Chennai</option>
+				    <option>Royal Villas, Bangalore</option>
+				    <option>Royal Villas, Mumbai</option>
+				    <option>Royal Villas, Delhi</option>
+				    <option>Royal Villas, Kolkata</option>
+			    </select>
+			    <input class = "check" name="check" type="date" size="30" placeholder="Check In and Check Out" >
+			    <input class = "rooms" name = "rooms" type="text" size="20" placeholder="Rooms">
+			    <button class = "checkbutton" id="modal-btn" onclick = "">Check Avaliability</button>
+			    <br>
+				<div class="modal">
+				    <span class="close-btn">&times;</span> 
+				  <div class="modal-content">
+				    <p><b>AVAILABLE</b></p>
+				    <p>Want to Reserve Rooms?</p>
+				   	<button class = "login" id="modal-btn1" onclick = "Register.html" href="Register.html">LOGIN</button>
+				   	<button class = "register" id="modal-btn2" onclick = ""href="Register.html">SIGN UP</button>
+				   	<button class = "guest" id="modal-btn3" onclick = ""href="Register.html">AS A GUSET</button>
+				  </div>
+				</div></div>
+				<script>
+				let modalBtn = document.getElementById("modal-btn")
+				let modal = document.querySelector(".modal")
+				let closeBtn = document.querySelector(".close-btn")
+				modalBtn.onclick = function(){
+				  modal.style.display = "block"
+				}
+				closeBtn.onclick = function(){
+				  modal.style.display = "none"
+				}
+				window.onclick = function(e){
+				  if(e.target == modal){
+				    modal.style.display = "none"
+				  }
+				}
+				</script>
+</body>
+		<footer>
+			<div class="foot" id="foot">
+				<h3><pre class="tab">©2020 Royal Villas. All Rights Reserved					            Privacy Policy | Legal | General Terms and Conditions</pre></h3><br>
+				<h3> Connect With Us: <a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-google"></a>
+			<a href="#" class="fa fa-linkedin"></a>
+			<a href="#" class="fa fa-instagram"></a> </h3>
+		</footer>
+</html>

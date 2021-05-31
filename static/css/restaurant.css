@@ -1,0 +1,365 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.bg-img
+{
+   opacity: 1;
+}
+
+.bg-img:hover {
+  opacity: 0.7;
+}
+
+.centered { 
+
+  position: absolute;
+  color:white;
+  text-align: left;
+  top: 60%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+.css-typing p {
+  margin-bottom: 10px;
+  border-right: .15em solid orange;
+  font-family: 'Merienda', cursive;
+  font-size: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.css-typing p:nth-child(1) {
+  width: 11em;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(2) {
+  width: 7em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(3) {
+  width: 7em;
+  opacity: 0;
+  -webkit-animation: type3 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.css-typing p:nth-child(4) {
+  width: 7.3em;
+  opacity: 0;
+  -webkit-animation: type4 2s steps(40, end), blink .5s step-end infinite alternate;
+  animation: type4 2s steps(40, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes type4 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type4 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
+.foodhead
+{
+  margin: auto;
+  font-family: 'Proza Libre', sans-serif;
+  color:white;
+  display: block;
+  width: 20%;
+  margin-left: 5px;
+  text-align: left;
+  padding: 12px 0;
+  height: 40px;
+}
+
+.dining { 
+  display:inline-block; 
+  margin-left: 60px;
+  height:100px;
+  margin-top: -220px; 
+  margin-bottom: 100px;
+  vertical-align: middle;
+} 
+.dining img { 
+  width: 600px;
+  height:420px;
+  margin-top: 10px;
+  float: right;
+} 
+.description1
+{
+  display:inline-block;
+  vertical-align: middle; 
+  width:500px; 
+  text-align:justify; 
+  margin-left:40px; 
+  margin-top: 20px; 
+  font-size: 20px;
+}
+#image0:hover {opacity: 0.7;}
+#image1:hover {opacity: 0.7;}
+#image2:hover {opacity: 0.7;}
+#image3:hover {opacity: 0.7;}
+#image4:hover {opacity: 0.7;}
+#image5:hover {opacity: 0.7;}
+#image6:hover {opacity: 0.7;}
+#image7:hover {opacity: 0.7;}
+#image8:hover {opacity: 0.7;}
+#image9:hover {opacity: 0.7;}
+#image10:hover {opacity: 0.7;}
+#image11:hover {opacity: 0.7;}
+#image12:hover {opacity: 0.7;}
+#image13:hover {opacity: 0.7;}
+#image14:hover {opacity: 0.7;}
+#image15:hover {opacity: 0.7;}
+#image16:hover {opacity: 0.7;}
+#image17:hover {opacity: 0.7;}
+#image18:hover {opacity: 0.7;}
+#image19:hover {opacity: 0.7;}
+#image20:hover {opacity: 0.7;}
+#image21:hover {opacity: 0.7;}
+#image22:hover {opacity: 0.7;}
+
+.modal {
+     
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0%;
+    top: 7%;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 470px;
+    max-height: 500px;
+
+}
+
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 50px;
+    right: 85px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+ 
+#content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#content img {
+   width: 190px;
+   height:158px;
+   padding: 2px;
+   margin-left: 12px;
+}
+
+
+
+.content_img{
+ position: relative;
+ width: 200px;
+ height: 200px;
+ float: left;
+ margin-right: 10px;
+}
+
+/* Child Text Container */
+.content_img div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: black;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.content_img:hover{
+ cursor: pointer;
+}
+
+.content_img:hover div{
+ width: 150px;
+ padding: 8px 15px;
+ visibility: visible;
+ opacity: 0.7; 
+}

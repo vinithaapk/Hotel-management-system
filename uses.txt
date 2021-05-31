@@ -1,0 +1,4 @@
+html , css, javascript, - frontend
+oracle or mysql - login, signup, as a guest
+python - check availability
+django - run program in server

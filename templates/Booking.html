@@ -1,0 +1,137 @@
+{% load static %}
+<html>
+<head>
+	<title>Hotel Royal Villas</title>
+	<meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="{% static 'icon/favicon.png' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/homepage.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/booking.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+		<header>
+		<div class="Header">
+			<div class="logo-image"><a href = "#" ><img src="{% static 'icon/villas.png' %}" width="170" height="48" align="center"></a></div></div><br>
+		</header>
+</head>
+<body>
+			<nav class="navbar"><ul>
+					<li><a href="{% url 'index' %}">HOME</a></li>
+					<li><a href="{% url 'restaurant' %}">RESTAURANT</a></li>
+					<li><a href="{% url 'booking' %}">BOOKING</a></li>
+					<li><a href="{% url 'rooms' %}">ROOMS</a></li>
+					<li><a href="{% url 'location' %}">LOCATION</a></li>
+					<li><a href="{% url 'about' %}">ABOUT</a></li>
+					<li><a href="{% url 'contact' %}">CONTACT US</a></li>
+
+			</ul></nav>	</div><br>
+			<br>
+			<form action="" method="POST">
+			{% csrf_token %}
+			<div class="toptexts2" id="toptexts2">
+			<div class="bookinghead"><h1>Booking</h1></div>
+
+			<div class="details">
+				<div class="split left">
+				<div class="centered">
+
+				    <p class="lheadings">Rooms</p>
+				    <select required name="roomsdetails" class="roomsdetails" >
+						<option name="roomsdetails">Select Room</option>
+						<option room_category = "SINGLE NON-AC">SINGLE NON-AC</option>
+						<option room_category = "SINGLE AC">SINGLE AC</option>
+						<option room_category = "DOUBLE NON-AC">DOUBLE NON-AC</option>
+						<option room_category = "DOUBLE AC">DOUBLE AC</option>
+						<option room_category = "TRIPLE NON-AC">TRIPLE NON-AC</option>
+						<option room_category = "TRIPLE AC">TRIPLE AC</option>
+						<option room_category = "DOUBLE ROOM AC">DOUBLE ROOM AC</option>
+						<option room_category = "DOUBLE ROOM NON-AC">DOUBLE ROOM NON-AC</option>
+						<option room_category = "FAMILY AC">FAMILY AC</option>
+						<option room_category = "KING AC">KING AC</option>
+						<option room_category = "DOUBLE-DOUBLE AC">DOUBLE-DOUBLE AC</option>
+						<option room_category = "STUDIO">STUDIO</option>
+						<option room_category = "PRESIDENT SUITE">PRESIDENT SUITE</option>
+					</select>
+
+					<p class = "lheadings">Adults</p>
+					<input type="number" name="adultsdetails" class = "adultsdetails" size = 10 min="1" max="10" placeholder="Adults" required="required" />
+
+					<p class = "lheadings">Children</p>
+					<input type="number" name="childrendetails" class = "childrendetails"  size = 10 min="1" max="10" placeholder="Children" required="required"/>
+
+					<p class = "lheadings">Arrival Date</p>
+				    <input class= "checkdetails" type="date" id="check_in" name="checkindetails" size="30" onChange='var check_out = document.getElementById("check_out"); check_out.setAttribute("min", this.value); check_out.value = (this.value);' required="required"/><br>
+				 
+				    <p class = "lheadings">Departure Date</p>
+					<input class= "checkdetails" type="date" id="check_out" name="checkoutdetails" size="30" required="required"/>
+
+				    <br>
+				</div>
+				</div>
+
+				<div class="split right">
+				<div class="centered">
+					<p><br></p>
+				    <p class = "rheadings">Name</p>
+				    <input  name = "namedetails" class = "namedetails" type="text" size="20" placeholder="Enter your name" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)" required="required">
+					<p class = "rheadings">Phone number</p>
+				    <input  name = "phonedetails" class = "phonedetails" type="tel" size="12" pattern="[7-9]{1}[0-9]{9}" maxlength="12" placeholder="Enter your phone number" required="required">
+					<p class = "rheadings">Email Id</p>
+				    <input  name = "emaildetails" class = "emaildetails" type="text" size="30" pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="Enter your mail id" required="required"/>
+					<p class = "rheadings">Any further Details</p>
+					<textarea name = "moredetails" class = "moredetails" type="textarea" maxlength = 55 placeholder="Write that you need more"></textarea>
+				</div>
+			    </div>
+			    
+			    <button  type="submit" class = "registerbutton" onclick="myFunction()">Confrim reservation</button>
+			    
+			    {% for message in messages %}
+  				<script>
+  				      function myFunction() {
+  				        { alert('{{message}}') }
+  				        
+  				      }
+  				</script>
+  				{% endfor %}
+
+			    <br>
+			    </div>
+			    
+			</div>
+			<br>
+			<div class="info_rounded"> 
+    			<p><strong>NOTE: </strong> If you want to cancel the reservation, then contact the receptionist within 24 hr. Otherwise use the contact form to make an request to delete it. Thank you!</p> 
+			</div> 
+			
+
+</body>
+		<footer class="footer" style="margin-top: -290px">
+		<div class="inner-footer">
+		<div class="social-links">
+			<ul>
+		<li class="social-items"><a href="#" ><i class="fa fa-facebook"></i></a></li>
+		<li class="social-items"><a href="#" ><i class="fa fa-twitter-square"></i></a></li>
+		<li class="social-items"><a href="#" ><i class="fa fa-instagram"></i></a></li>
+		<li class="social-items"><a href="#" ><i class="fa fa-tumblr"></i></a></li>
+			</ul>
+		</div>
+		<div class="quick-links">
+			<ul>
+
+				<li class="quick-items"><a href="#">Home</a></li>
+				<li class="quick-items"><a href="#">Contact</a></li>
+				<li class="quick-items"><a href="#">Services</a></li>
+				<li class="quick-items"><a href="#">Policy</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="outer-footer">
+		Hotel Royal Villas & Restaurant &copy; 2021. Privacy Policy
+	</div>
+</footer>
+</html>

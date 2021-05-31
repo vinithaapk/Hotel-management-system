@@ -1,0 +1,20 @@
+find the path of existing project
+
+pip install virtualenv
+
+virtualenv (virtual envirment name) eg: virtualenv demo
+
+(virtual environment name)\Scripts\activate eg: 
+pip install django
+
+django-admin.exe startproject WordCloud .
+
+python manage.py runserver
+
+in web browser, enter localhost:8000
+
+python manage.py startapp (name) eg:python manage.py startapp polls
+
+views
+urls
+

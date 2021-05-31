@@ -1,0 +1,163 @@
+{% load static %}
+<html>
+<head>
+	<title>Hotel Royal Villas</title>
+	<meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="{% static 'icon/favicon.png' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/homepage.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/restaurant.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@1,600&display=swap" rel="stylesheet">
+	<header>
+		<div class="Header">
+			<div class="logo-image"><a href="#"><img src="{% static 'icon\villas.png' %}" width="170" height="48" align="center"></a></div>
+		</div><br>
+	</header>
+</head>
+<body>
+	
+	<nav class="navbar">
+		<ul>
+			<li><a href="{% url 'index' %}">HOME</a></li>
+			<li><a href="{% url 'restaurant' %}">RESTAURANT</a></li>
+			<li><a href="{% url 'booking' %}">BOOKING</a></li>
+			<li><a href="{% url 'rooms' %}">ROOMS</a></li>
+			<li><a href="{% url 'location' %}">LOCATION</a></li>
+			<li><a href="{% url 'about' %}">ABOUT</a></li>
+			<li><a href="{% url 'contact' %}">CONTACT US</a></li>
+
+		</ul>
+	</nav>
+	<div class="toptexts2" id="toptexts2">
+	<div class = "bg-img"><img id="bg-img" src="{% static 'images\res.jpg' %}" width="1263px" height="500px"></div>
+	<div class="centered">
+	  <div class="css-typing">
+	  	  <p>OUR RESTAURANTS</p>
+		  <p>WESTIN</p>
+		  <p>SAINDHAVI</p>
+		  <p>HYATT XO</p>
+	  </div>
+ 	</div><br>
+ 	<div class="foodhead">
+		<h1>Restaurant</h1>
+	</div>
+
+	<div class="dining">
+		<img id="image0" src="{% static 'images\res2.jpg' %}" >
+	</div>
+	<div class="description1">
+	 <p>Hotel Royal Villas, create the royal ambience, recreated the interiors and beautifully created decades old Paintings adorning the walls with traditional sculptures placed at vantage points. At our hotel, you can indulge in dishes from across the world, while being seated in one place. One of a kind among seafood and multicuisine restaurants, Westin offers lip-smacking dishes from different cuisines on select days. Our Hotel's signature Indian speciality restaurant, Saindhavi offers some of the best authentic North Indian and South Indian dishes. The restaurant is a popular name among fine dining Indian restaurants, distinctive cooking styles, and the traditional spices used offering an experience like no other. The best Chinese food ends when you step inside Hyatt XO. The restaurant is known for its flavoursome dishes and a fare that indeed does justice to the oriental lands. Hyatt XO is a real gem among the Chinese restaurants and an absolute must-visit during your stay. </p>
+	</div>	
+	<br> 
+
+	<div class="foodhead">
+			<h1>SAINDHAVI</h1>
+		</div><br><hr>
+		<div class="description" id="description">
+				<p>Indian Speciality Restaurant
+	The signature restaurant of Hotel Royal Villas, Saindhavi, serves a magnificent and royal treat of the finest Indian dining experience.Saindhavi offers a menu that is a rich blend of Indian recipes.An ambiance with a show kitchen, majestic décor and The Maharaja Table offering grand treatment with the finest dishes from the royal kitchens, will leave no stones unturned in making your visit a highly memorable dining experience.</p>
+			</div>
+	<div id="content">
+		
+<div class="content_img"><img id="image1" src="{% static 'images\food_5.jpg' %}"><div>Idly Sambar</div></div>
+<div class="content_img"><img id="image2" src="{% static 'images\food_9.jpg' %}"> <div>Dosa</div></div>
+<div class="content_img"><img id="image3" src="{% static 'images\food_11.jpg' %}"><div>Parotta</div></div>
+<div class="content_img"><img id="image4" src="{% static 'images\food_20.jpg' %}"><div>Puttu</div></div>
+<div class="content_img"><img id="image5" src="{% static 'images\food_17.jpg' %}"><div>Ven Pongal</div></div>
+<div class="content_img"><img id="image6" src="{% static 'images\food_15.jpg' %}"><div>ButterMilk</div></div>
+	</div>
+
+	<div class="foodhead">
+		<h1>WESTIN</h1>
+	</div><br><hr>
+	<div class="description" id="description">
+		<p>A one-of-a-kind multi-cuisine restaurant that opens up to the impressive views. Dinner on Wednesdays. Street foods and crowd favourites from the streets of Europe, Japan, India, South East Asia & the Middle East. Dinner-Veg and imported meat and seafood like calamari, oyster and assorted fish grilled to perfection. </p>
+	</div>
+	<div id="content">
+
+<div class="content_img"><img id="image7"  src="{% static 'images\food_1.jpg' %}"><div>Burger</div></div>
+<div class="content_img"><img id="image8"  src="{% static 'images\food_2.jpg' %}"> <div>Spaghetti</div></div>
+<div class="content_img"><img id="image9"  src="{% static 'images\food_22.jpg' %}"><div>Chicken Fry</div></div>
+<div class="content_img"><img id="image10" src="{% static 'images\food_21.jpg' %}"><div>Pasta</div></div>
+<div class="content_img"><img id="image11" src="{% static 'images\food_3.jpg' %}"><div>Noodles</div></div>
+<div class="content_img"><img id="image12" src="{% static 'images\food_7.jpg' %}"> <div>Watermelon juice</div></div>
+				 
+	</div>
+
+	<div class="foodhead">
+			<h1>HYATT XO</h1>
+		</div><br><hr>
+		<div class="description" id="description">
+			<p>Hyatt XO is where our chefs create magical delicacies that recount stories of flavours from the Orient.
+	Hyatt XO’s Sunday Dimsum Brunch: Spoil yourself with choices and pick from an array of dimsums of chicken, seafood, hargov, Chilean sea bass, vegetable and lotus roll, shiitake mushroom, truffle and edamame.Come over for authentic Chinese treats including our succulent Peking Duck, tender Cantonese chicken and chilli lobsters.</p>
+			</div>
+	<div id="content">
+
+<div class="content_img"><img id="image13" src="{% static 'images\food_19.jpg' %}"><div>Veggie Noodles</div></div>
+<div class="content_img"><img id="image14" src="{% static 'images\food_23.jpg' %}"><div>Soy Sauce Ramen</div></div> 
+<div class="content_img"><img id="image15" src="{% static 'images\food_24.jpg' %}"><div>Sushi Rolls</div></div>
+<div class="content_img"><img id="image16" src="{% static 'images\food_25.jpg' %}"><div>Dumplings</div></div>
+<div class="content_img"><img id="image17" src="{% static 'images\food_26.jpg' %}"><div>Chicken Noodles</div></div>
+<div class="content_img"><img id="image18" src="{% static 'images\food_27.jpg' %}"><div>Chinese Tea</div></div> 
+	</div>
+
+		<div id="myModal" class="modal">
+			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+			<div class="myImg">
+				<img class="modal-content" id="img1">
+				<img class="modal-content" id="img2">
+				<img class="modal-content" id="img3">
+				<img class="modal-content" id="img4">
+				<img class="modal-content" id="img5">
+				<img class="modal-content" id="img6">
+				<img class="modal-content" id="img7">
+				<img class="modal-content" id="img8">
+				<img class="modal-content" id="img9">
+				<img class="modal-content" id="img10">
+				<img class="modal-content" id="img11">
+				<img class="modal-content" id="img12">
+				<img class="modal-content" id="img13">
+				<img class="modal-content" id="img14">
+				<img class="modal-content" id="img15">
+				<img class="modal-content" id="img16">
+				<img class="modal-content" id="img17">
+				<img class="modal-content" id="img18">
+				
+			</div>
+		</div>
+			<script src="{% static '/js/restaurant.js' %}"></script>
+	</div>
+	</body>
+	<footer class="footer" style="margin-top: -200px; ">
+		<div class="inner-footer">
+		<div class="social-links">
+			<ul>
+		<li class="social-items"><a href="#" ><i class="fa fa-facebook"></i></a></li>
+		<li class="social-items"><a href="#" ><i class="fa fa-twitter-square"></i></a></li>
+		<li class="social-items"><a href="#" ><i class="fa fa-instagram"></i></a></li>
+		<li class="social-items"><a href="#" ><i class="fa fa-tumblr"></i></a></li>
+			</ul>
+		</div>
+		<div class="quick-links">
+			<ul>
+
+				<li class="quick-items"><a href="#">Home</a></li>
+				<li class="quick-items"><a href="#">Contact</a></li>
+				<li class="quick-items"><a href="#">Services</a></li>
+				<li class="quick-items"><a href="#">Policy</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="outer-footer">
+		Hotel Royal Villas & Restaurant &copy; 2021. Privacy Policy
+	</div>
+</footer>
+</html>

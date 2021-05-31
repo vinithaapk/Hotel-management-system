@@ -1,0 +1,188 @@
+{% load static %}
+<html>
+<head>
+	<title>Hotel Royal Villas</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Vinitha">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="{% static 'icon/favicon.png' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/homepage.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/rooms.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+		<header>
+		<div class="Header">
+			<div class="logo-image"><a href = "#" ><img src="{% static 'icon\villas.png' %}" width="170" height="48" align="center"></a></div></div><br>
+		</header>
+		
+</head>
+<body>
+		<nav class="navbar">
+		<ul>
+			<li><a href="{% url 'index' %}">HOME</a></li>
+			<li><a href="{% url 'restaurant' %}">RESTAURANT</a></li>
+			<li><a href="{% url 'booking' %}">BOOKING</a></li>
+			<li><a href="{% url 'rooms' %}">ROOMS</a></li>
+			<li><a href="{% url 'location' %}">LOCATION</a></li>
+			<li><a href="{% url 'about' %}">ABOUT</a></li>
+			<li><a href="{% url 'contact' %}">CONTACT US</a></li>
+
+		</ul>
+	   </nav>	
+<div class="toptexts2" id="toptexts2">
+	<div class="roomshead"><h1>Rooms</h1></div>
+	<div class="description" id="description">
+		<p>Hotel Royal Villas located in various places in india. Our Hotel has five floors, with 50 rooms funnished carefully and decorated with elegance. Hotel offers professional services for all guests, luxury rooms and all the rooms have jacuzzi. Our Hotel has a swimming pool, gym, parking, elevator, meeting and event room and terrace.</p>
+	</div>
+	
+	
+	<div class="gallery1">
+	   <a target="_blank" href="images\single-non.jpg">
+	     <img src="{% static 'images\single-non.jpg' %}">
+	   </a>
+	  <div class="desc" cat = "SNAC">Single (Non-A/C)</div>
+	  <div class="desc">Price: Rs.2500/day</div>
+	   <a href="{% url 'booking' %}"><button class="bookroom">Book</button>
+	</div>
+
+	<div class="gallery1" >
+	  <a target="_blank" href="images\doublebed-non.jpg">
+	    <img src="{% static 'images\doublebed-non.jpg' %}">
+	  </a>
+	  <div class="desc" cat = "DNAC">Double (Non A/C)</div>
+	  <div class="desc">Price: Rs.3500/day</div>
+	  <a href="{% url 'booking' %}"><button class="bookroom">Book</button>
+	</div> 
+
+	<div class="gallery1">
+	  <a target="_blank" href="images\single-ac.jpg">
+	    <img src="{% static 'images\single-ac.jpg' %}">
+	  </a>
+	  <div class="desc" cat = "TNAC">Triple(Non-A/C)</div>
+	  <div class="desc">Price: Rs.4500/day</div>
+	  <a href="{% url 'booking' %}"><button class="bookroom">Book</button>
+	</div>
+
+	<div class="gallery1">
+	   <a target="_blank" href="images\single-non.jpg">
+	     <img src="{% static 'images\single-non.jpg' %}">
+	   </a>
+	  <div class="desc" cat = "DRNAC">Double Room(Non-A/C)</div>
+	  <div class="desc">Price: Rs.5000/day</div>
+	   <a href="{% url 'booking' %}"><button class="bookroom">Book</button>
+	</div><br>
+
+	<div class="gallery2">
+	  <a target="_blank" href="images\single-ac.jpg">
+	    <img src="{% static 'images\single-ac.jpg' %}">
+	  </a>
+	  <div class="desc" cat = "SAC">Single (A/C) </div>
+	  <div class="desc">Price: Rs.3500/day</div>
+	  <a href="{% url 'booking' %}"><button class="bookroom">Book</button>
+	</div>
+
+	<div class="gallery2">
+	  <a target="_blank" href="images\doublebed-ac.jpg">
+	    <img src="{% static 'images\doublebed-ac.jpg' %}">
+	  </a>
+	  <div class="desc" cat = "DAC">Double(A/C)</div>
+	  <div class="desc">Price: Rs.4500/day</div>
+	  <a href="{% url 'booking' %}"><button class="bookroom">Book</button>
+	</div>
+
+	<div class="gallery2">
+	   <a target="_blank" href="images\single-non.jpg">
+	     <img src="{% static 'images\single-non.jpg' %}">
+	   </a>
+	  <div class="desc" cat = "TAC">Triple(A/C)</div>
+	  <div class="desc">Price: Rs.5600/day</div>
+	   <a href="{% url 'booking' %}"><button class="bookroom">Book</button>
+	</div>
+
+	<div class="gallery2">
+	  <a target="_blank" href="images\single-ac.jpg">
+	    <img src="{% static 'images\single-ac.jpg' %}">
+	  </a>
+	  <div class="desc" cat = "DRAC">Double Room(A/C)</div>
+	  <div class="desc">Price: Rs.6500/day</div>
+	  <a href="{% url 'booking' %}"><button class="bookroom">Book</button>
+	</div><br>
+
+	<div class="gallery3">
+	  <a target="_blank" href="images\doublebed-ac.jpg">
+	    <img src="{% static 'images\doublebed-ac.jpg' %}">
+	  </a>
+	  <div class="desc" cat = "FAC">Family Room(A/C)</div>
+	  <div class="desc">Price: Rs.7000/day</div>
+	  <a href="{% url 'booking' %}"><button class="bookroom">Book</button>
+	</div>
+
+	<div class="gallery3">
+	  <a target="_blank" href="images\doublebed-non.jpg">
+	    <img src="{% static 'images\doublebed-non.jpg' %}">
+	  </a>
+	  <div class="desc" cat = "KAC">King(A/C)</div>
+	  <div class="desc">Price: Rs.7800/day</div>
+	  <a href="{% url 'booking' %}"><button class="bookroom">Book</button>
+	</div> 
+	
+	<div class="gallery3">
+	  <a target="_blank" href="images\doublebed-ac.jpg">
+	    <img src="{% static 'images\doublebed-ac.jpg' %}">
+	  </a>
+	  <div class="desc" cat = "DDAC">Double-double(A/C)</div>
+	  <div class="desc">Price: Rs.9000/day</div>
+	  <a href="{% url 'booking' %}"><button class="bookroom">Book</button>
+	</div>
+
+	<div class="gallery3">
+	  <a target="_blank" href="images\doublebed-non.jpg">
+	    <img src="{% static 'images\doublebed-non.jpg' %}">
+	  </a>
+	  <div class="desc">Studio</div>
+	  <div class="desc">Price: Rs.10,000/day</div>
+	  <a href="{% url 'booking' %}"><button class="bookroom"  cat = "STAC">Book</button></a>
+	</div><br><hr class="line" style="margin-top: 850px;">
+	 
+	<div class="roomshead"><h1>VIP</h1></div>
+	<div class="vippackage" cat = "VIP">
+	  <a target="_blank" href="{% static 'images\doublebed-non.jpg' %} ">
+	    <img src="{% static 'images\doublebed-non.jpg' %}">
+	  </a></div>
+	  <div class="desc1">President Suite(VIP)</div>
+	  <div class="desc2">Price: Rs.15,000/day<br><br>	
+	  <a  href="{% url 'booking' %}"><button class= "vipbookroom" >Book</button></a></div>
+
+	</div>
+	  
+
+</body>
+<footer class="footer" style="margin-top: 400px">
+	<div class="inner-footer">
+		<div class="social-links">
+			<ul>
+		<li class="social-items"><a href="#" ><i class="fa fa-facebook"></i></a></li>
+		<li class="social-items"><a href="#" ><i class="fa fa-twitter-square"></i></a></li>
+		<li class="social-items"><a href="#" ><i class="fa fa-instagram"></i></a></li>
+		<li class="social-items"><a href="#" ><i class="fa fa-tumblr"></i></a></li>
+			</ul>
+		</div>
+		<div class="quick-links">
+			<ul>
+
+				<li class="quick-items"><a href="#">Home</a></li>
+				<li class="quick-items"><a href="#">Contact</a></li>
+				<li class="quick-items"><a href="#">Services</a></li>
+				<li class="quick-items"><a href="#">Policy</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="outer-footer">
+		Hotel Royal Villas & Restaurant &copy; 2021. Privacy Policy
+	</div>
+</footer>
+</html>

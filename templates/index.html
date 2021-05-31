@@ -1,0 +1,248 @@
+{% load static %}
+
+<html>
+<head>
+	<title>Hotel Royal Villas</title>
+	<meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="{% static 'icon/favicon.png' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/homepage.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+	<link href="//db.onlinewebfonts.com/c/69dbc1186412d7831b88d8a78a360360?family=DIN+Condensed+Web" rel="stylesheet" type="text/css"/>
+	<header>
+		<div class="Header">
+			<div class="logo-image"><a href="#"><img src="{% static 'icon\villas.png' %}" width="170" height="48" align="center"></a></div>
+		</div><br>
+	</header>
+</head>
+<body>
+		<script src="{% static '/js/homepage.js' %}"></script>
+
+	<nav class="navbar">
+		<ul>
+			<li><a href="{% url 'index' %}">HOME</a></li>
+			<li><a href="{% url 'restaurant' %}">RESTAURANT</a></li>
+			<li><a href="{% url 'booking' %}">BOOKING</a></li>
+			<li><a href="{% url 'rooms' %}">ROOMS</a></li>
+			<li><a href="{% url 'location' %}">LOCATION</a></li>
+			<li><a href="{% url 'about' %}">ABOUT</a></li>          
+			<li><a href="{% url 'contact' %}">CONTACT US</a></li>
+		</ul>
+	</nav> 
+ 		
+	<div id="slideshow"> 
+    <div class="slide-wrapper"> 
+      <div class="slide" style="background-image: url({% static 'images/royal_villas6.jpg' %})" > 
+        <h1 class="slide-number">
+			  <div class="button">
+			    <div class="top-bar"></div>
+			    <div class="bot-bar"></div>
+			    <div class="left-bar"></div>
+			    <div class="right-bar"></div>
+			  <a href="{% url 'index' %}" style="text-decoration: none; color:white">Royal Villas</a>
+			</div>
+			</h1>
+      </div> 
+      <div class="slide" style="background-image: url({% static 'images/room.jpg' %})" >  
+        <h1 class="slide-number">
+			  <div class="button">
+			    <div class="top-bar"></div>
+			    <div class="bot-bar"></div>
+			    <div class="left-bar"></div>
+			    <div class="right-bar"></div>
+			  <a href="{% url 'rooms' %}" style="text-decoration: none; color:white">Exclusive Offers</a>
+			</div></h1>
+      </div> 
+      <div class="slide" style="background-image: url({% static 'images/cook.jpg' %})" >  
+        <h1 class="slide-number"> 
+			  <div class="button">
+			    <div class="top-bar"></div>
+			    <div class="bot-bar"></div>
+			    <div class="left-bar"></div>
+			    <div class="right-bar"></div>
+			  <a href="{% url 'index' %}" style="text-decoration: none; color:white">Excellent Services</a>
+			</div>
+			</h1> 
+      </div> 
+      <div class="slide" style="background-image: url({% static 'images/food.jpg' %})" >  
+        <h1 class="slide-number">
+			  <div class="button">
+			    <div class="top-bar"></div>
+			    <div class="bot-bar"></div>
+			    <div class="left-bar"></div>
+			    <div class="right-bar"></div>
+			  <a href="{% url 'restaurant' %}" style="text-decoration: none; color:white">Hygenic Foods</a>
+			</div>
+			</h1>
+      </div> 
+    </div>
+    </div> 
+    <div class="left1" id="left1">
+		<p>The Royal Villas is a luxurious experience evoking the rich heritage of the palaces of City in grandness and space. The interiors are exquisite with beautiful, lush environment and landscapes are designed by a world renowned landscape designer. Large open vistas rival with exquisitely decorated walls like the eacock feather walld. Large spacious rooms feature chic and modern guest room amenities. A stay at the award winning Royal Villas promises a rich, royal and luxurious experience.</p>
+		<p><u>Rooms:</u> 100 Standard/ Premiere Rooms<br><u>Restaurant:</u> Westin - American Restaurant, Saindhavi - Indian restaurant, Hyatt XO- Chinese restaurant<br>Spa, The Library, Gym, The Cake shop, The Lobby Lounge and full day Internet access<br>
+		</p>
+	</div>
+	<form>
+	<div class ="box">
+	<div class="container">
+    <p class="booknow">BOOK NOW</p>
+		
+		<select name="room_category" class="rooms">
+			<option name="room_category">Select Room</option>
+			<option room_category = "SINGLE NON-AC">SINGLE NON-AC</option>
+			<option room_category = "SINGLE AC">SINGLE AC</option>
+			<option room_category = "DOUBLE NON-AC">DOUBLE NON-AC</option>
+			<option room_category = "DOUBLE AC">DOUBLE AC</option>
+			<option room_category = "TRIPLE NON-AC">TRIPLE NON-AC</option>
+			<option room_category = "TRIPLE AC">TRIPLE AC</option>
+			<option room_category = "DOUBLE ROOM AC">DOUBLE ROOM AC</option>
+			<option room_category = "DOUBLE ROOM NON-AC">DOUBLE ROOM NON-AC</option>
+			<option room_category = "FAMILY AC">FAMILY AC</option>
+			<option room_category = "KING AC">KING AC</option>
+			<option room_category = "DOUBLE-DOUBLE AC">DOUBLE-DOUBLE AC</option>
+			<option room_category = "STUDIO">STUDIO</option>
+			<option room_category = "PRESIDENT SUITE">PRESIDENT SUITE</option>
+		</select>
+
+		<input class="check" type="date" id="check_in" name="check_in" size="30" placeholder="Arrival Date" onChange='var check_out = document.getElementById("check_out"); check_out.setAttribute("min", this.value); check_out.value = (this.value);' />
+		<input class="check" type="date" id="check_out" name="check_out" size="30" placeholder="Departure Date" />
+
+		<button type="submit" class="checkbutton" name="availability" id="btn1" onclick="myFunction()">Check Availability</button>
+		{% for message in messages %}
+		<script>
+				  function myFunction() {
+		  			 alert('{{message}}')
+					}
+		</script>
+		{% endfor %}
+		<button class="bookbutton" name="bookbutton" id="btn2" type="submit"><a href="{% url 'booking' %}" style="text-decoration: none; color:white;">Book Now</a></button>
+	</div> </div></form>
+<br><br>
+<div class="fshead">
+		<h1>Facilities and Services</h1>
+	</div><hr>
+	<div class="gallery">
+	  <a target="_blank" href="{% static 'images\spa.jpg' %}">
+	    <img src="{% static 'images\spa.jpg' %}">
+	  </a>
+	  <div class="desc">Spa</div>
+	  <div class="desc">Each spa suite has been designed with thatched roofs with an open air bathroom, adding a truly magical and tranquil feeling for your well-being.</div>
+	</div>
+
+	<div class="gallery">
+	   <a target="_blank" href="images\supermarket.jpg">
+	     <img src="{% static 'images\supermarket.jpg' %}">
+	   </a>
+	  <div class="desc">Supermarket</div>
+	  <div class="desc">Located inside the hotel, Supermarket sells basic groceries, stationary, glassware and many other non-food items.</div>
+	</div>
+
+	<div class="gallery">
+	  <a target="_blank" href="images\pharmacy.jpg">
+	    <img src="{% static 'images\pharmacy.jpg' %}">
+	  </a>
+	  <div class="desc">Pharmacy</div>
+	  <div class="desc">Located inside the hotel, the pharmacy sells cosmetics and skincare products in addition to medical and healthcare products.</div>
+	</div>
+
+	<div class="gallery">
+	  <a target="_blank" href="images\atm.jpg">
+	    <img src="{% static 'images\atm.jpg' %}">
+	  </a>
+	  <div class="desc">Banks and ATM Machines</div>
+	  <div class="desc">There are two banks and ATM machines inside the hotel. Customer can easily perform all your digital and mobile banking transactions at the banks. The ATM machines provide 24/7 service.</div>
+	</div>
+
+	<div class="gallery">
+	  <a target="_blank" href="images\business.jpg">
+	    <img src="{% static 'images\business.jpg' %}">
+	  </a>
+	  <div class="desc">Business Center</div>
+	  <div class="desc">Hotel Royal Villas provides significant services for business needs and also provides office services like scanning, emailing documents, fax, photocopying, printing and offices supplies.</div>
+	</div>
+
+	<div class="gallery">
+	  <a target="_blank" href="images\parking.jpg">
+	    <img src="{% static 'images\parking.jpg' %}">
+	  </a>
+	  <div class="desc">Parking Area</div>
+	  <div class="desc">Hote Royal Villas offers 24-hour indoor parking for its guests.</div>
+	</div>
+
+	<div class="gallery">
+	  <a target="_blank" href="images\roomservice.jpg">
+	    <img src="{% static 'images\roomservice.jpg' %}">
+	  </a>
+	  <div class="desc">24-Hour Room service</div>
+	  <div class="desc">Hotel Royal Villas provides 24-hour room service</div>
+	</div>
+
+	<div class="gallery">
+	  <a target="_blank" href="images\wifi.jpg">
+	    <img src="{% static 'images\wifi.jpg' %}">
+	  </a>
+	  <div class="desc">Internet Access</div>
+	  <div class="desc">Hotel Royal Villas offers free Internet access. High-speed wireless Internet connection is complimentary both in the rooms and public areas.</div>
+	</div>
+	<br><br>
+    <div class="reviewhead" style="margin-top: 700px;">
+		<h1>
+		Customer Reviews
+		<img src="{% static 'images\avatar1.jpg' %}" class="avatar">
+		<img src="{% static 'images\avatar2.jpg' %}" class="avatar">
+		<img src="{% static 'images\avatar3.jpg' %}" class="avatar">
+		<img src="{% static 'images\avatar4.jpg' %}" class="avatar">
+		</h1>
+	</div>
+	<hr><br><br>
+	<div class="review1" >
+		<img src="{% static 'images\avatar1.jpg' %} " class="avatar1">
+		<div class="desc1">A very good budget hotel. Location of the hotel is excellent. A good hotel to stay for south asian people, especially India, Bangladesh. The rooms are spacious and well maintained. </div>
+	</div>
+	<div class="review2">
+		<img src="{% static 'images\avatar2.jpg' %}"  class="avatar1">
+		<div class="desc1">Hotel Rooms are really maintained well. Everyday they provide complimentary toothpaste, shampoo, shower gel. The Restaurant foods are so good. </div>
+	</div><br>
+	<div class="review3" >
+		<img src="{% static 'images\avatar3.jpg' %}" class="avatar1">
+		<div class="desc1">Hotel Royal Villas, an absolutely outstanding hotel and perfectly located. Helpful, friendly staff who go above and beyond to make sure you have the best time</div>
+	</div><br>
+	<div class="review4">
+		<img src="{% static 'images\avatar4.jpg' %}" class="avatar1">
+		<div class="desc1">My stay was extremely comfortable. It was a wonderful experience. Good hospitality</div>
+	</div><br></div>
+</body>
+
+<footer class="footer">
+	<div class="inner-footer">
+		<div class="social-links">
+			<ul>
+		<li class="social-items"><a href="#" ><i class="fa fa-facebook"></i></a></li>
+		<li class="social-items"><a href="#" ><i class="fa fa-twitter-square"></i></a></li>
+		<li class="social-items"><a href="#" ><i class="fa fa-instagram"></i></a></li>
+		<li class="social-items"><a href="#" ><i class="fa fa-tumblr"></i></a></li>
+			</ul>
+		</div>
+		<div class="quick-links">
+			<ul>
+
+				<li class="quick-items"><a href="#">Home</a></li>
+				<li class="quick-items"><a href="#">Contact</a></li>
+				<li class="quick-items"><a href="#">Services</a></li>
+				<li class="quick-items"><a href="#">Policy</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="outer-footer">
+		Hotel Royal Villas & Restaurant &copy; 2021. Privacy Policy
+	</div>
+</footer>
+</html>
+
